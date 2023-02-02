@@ -1,0 +1,230 @@
+.box-one{
+	height: 200px;
+	width: 200px;
+	background-color: gray;
+	border-radius: 0% 0% 50% 50%;
+	margin: 10px;
+	
+}
+
+.box-two{
+	height: 200px;
+	width: 200px;
+	background-color: gray;
+	border-radius: 50% 50% 0% 0%;
+	margin: 10px;
+	
+	
+}
+*{
+	float: left;
+	box-sizing: border-box;
+	margin: 10px;
+
+}
+
+.div-one{
+	height: 200px;
+	width: 200px;
+	background-color: orange;
+	animation-name: bitm;
+	animation-duration: 5s;
+	animation-direction: normal;
+	animation-iteration-count: infinite;
+	animation-delay: 3s;
+	
+}
+
+
+.div-two{
+	height: 300px;
+	width: 300px;
+	background-color: coral;
+	/*animation-name: divTwo;
+	animation-delay: 3s;
+	animation-iteration-count: infinite;
+	animation-duration: 4s;*/
+
+}
+
+.div-two:hover{
+
+	animation-name: divTwo;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-duration: 4s;
+	transition: 2s;
+
+}
+
+
+
+
+@keyframes divTwo{
+	0%{
+		background-color: coral;
+		width: 300px;
+	}
+
+	50%{
+		background-color: orange;
+		width: 600px;
+
+	}
+
+	100%{
+		background-color: coral;
+		width: 300px;
+	}
+}
+
+@keyframes bitm {
+
+	from{
+		background-color: orange;
+	}
+	to{
+		background-color: red;
+	}
+
+}
+
+
+
+
+
+
+.div-three{
+	height: 200px;
+	width: 200px;
+	background-color: red;
+	animation-name: imag;
+	animation-duration: 7s;
+	animation-iteration-count: infinite;
+
+}
+
+@keyframes imag{
+	0%{
+		background-image: url("d5.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	25%{
+		background-image: url("dol.jpg");
+			background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	50%{
+		background-image: url("download.png");
+			background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	75%{
+		background-image: url("do6.jpg");
+			background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	100%{
+		background-image: url("dol.jpg");
+			background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+}
+
+.row{
+	content: '';
+	clear: both;
+	display: block;
+}
+
+
+.div-four{
+	height: 300px;
+	width: 300px;
+	/*background-color: chocolate;*/
+	background-image: url("dol.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transition: 3s;
+
+}
+
+.div-four:hover{
+/*
+	height: 500px;
+	width: 500px;*/
+	transform: scale(1.5 ,2);
+	/*transform: scaleX(1.5);
+	transform: scaleY(1.5);*/
+
+}
+
+
+.div-five{
+	height: 300px;
+	width: 300px;
+	background-color: purple;
+	animation-name: fan;
+	animation-duration: 100ms;
+	animation-iteration-count: infinite;
+}
+.div-five:hover{
+/*	transform: rotate(45deg);*/
+	transform: rotateX(90deg);
+	transform: rotateY(45deg);
+	transition: 3s;
+}
+
+/*@keyframes fan{
+	0%{transform: rotate(45deg);}
+	50%{transform: rotate(180deg);}
+	100%{transform: rotate(360deg);}
+}*/
+
+.div-six{
+	height: 200px;
+	width: 200px;
+	background-color: pink;
+	transition: 1s;
+
+}
+
+.div-six:hover{
+/*	transform: translate(20px , 20px);*/
+	transform: translateX(10px);
+}
+\
+
+.div-en{
+	height: 300px;
+	width: 300px;
+	background-color:black;
+
+}
+.div-en:hover{
+	transform: skew(10deg);
+}
+
+.div-eight{
+	width: 300px;
+	height: 300px;
+	background-color: red;
+	transform: skewY(45deg);
+	margin-top: 130px;
+}
+
+.div-nine{
+	width: 300px;
+	height: 300px;
+	background-color: red;
+	margin-top: 130px;
+	transform: skewY(-45deg);
+
+}
